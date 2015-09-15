@@ -16,8 +16,6 @@ let gitOwner = "forki"
 let gitRepo = "TestUpload"
 
 // commit and push to repo
-StageAll ""
-Git.Commit.Commit "" (sprintf "Bump version to %s" version)
 Branches.pushBranch "" "origin" (Information.getBranchName "")
 
 Branches.tag "" version
